@@ -1,0 +1,182 @@
+<!--! JavaScript benötigt! -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulare mit Bootstrap - Teil 2</title>
+  <!-- CSS only -->
+  <!-- Bootstrap-CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom-CSS -->
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <div class="container">
+    <h1>Formular Layouts</h1>
+    <h2>1. Formular-Größen</h2>
+
+    <form action="" class="row">
+
+      <div class="col">
+        <label for="klein">Klein</label>
+        <input type="text" name="klein" id="klein" class="form-control">
+      </div>
+
+      <div class="col">
+        <label for="standard">Standard</label>
+        <input type="text" name="standard" id="standard" class="form-control">
+      </div>
+
+      <div class="col">
+        <label for="gross">Groß</label>
+        <input type="text" name="gross" id="gross" class="form-control">
+      </div>
+
+    </form>
+
+    <h2>2. Eingabegruppen</h2>
+
+    <form action="" class="row">
+
+      <div class="col">
+
+        <div class=" mb-3">
+          
+          <input type="text" name="name" placeholder="Name" class="form-control">
+        </div>
+
+        <div class=" mb-3">
+          <input type="text" name="name" placeholder="Name" class="form-control">
+          
+        </div>
+
+        <div class=" mb-3">
+          
+          <input type="text" name="name" placeholder="Name" class="form-control">
+          
+        </div>
+
+        <div class=" mb-3">
+          <input type="text" name="name" placeholder="Name" class="form-control">
+          
+          <input type="text" name="name" placeholder="Name" class="form-control">
+        </div>
+
+      </div>
+
+      <div class="col">
+        <h3>Größen</h3>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Klein</span>
+          <input type="text" name="klein" placeholder="Name" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Standard</span>
+          <input type="text" name="standard" placeholder="Name" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Groß</span>
+          <input type="text" name="gross" placeholder="Name" class="form-control">
+        </div>
+      </div>
+
+    </form>
+
+
+    <h2>3. Floating Labels</h2>
+    <p>funktionieren nur mit Bootstrap ab Version 5.0 und mit Bootstrap-JavaScript</p>
+
+    <form action="" class="row">
+      <div class="col">
+
+        <div class=" mb-3">
+          <!--! Bei Floating Labels ist die Reihenfolge grundsätzlich: 1. Formular-Element, 2. Label -->
+          <input type="email" name="floatingInput" id="floatingInput" placeholder="name@example.com" class="form-control">
+          <label for="floatingInput">E-Mail-Adresse</label>
+        </div>
+
+        <div class="">
+          <input type="password" name="floatingPassword" id="floatingPassword" placeholder="Passwort" class="form-control">
+          <label for="floatingPassword">Passwort</label>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="">
+          <textarea name="floatingMessage" id="floatingMessage" placeholder="Ihre Nachricht" style="height: 132px;" class="form-control"></textarea>
+          <label for="floatingMessage">Ihre Nachricht</label>
+        </div>
+
+      </div>
+    </form>
+
+
+    <h2>4. Switches</h2>
+    <p>funktionieren nur mit Bootstrap ab Version 5.0 und mit Bootstrap-JavaScript</p>
+
+    <form action="" class="row">
+
+      <div class="col">
+
+        <div class="form-check">
+          <input type="checkbox" name="switchCb" id="switchCb" class="form-check-input">
+          <label for="switchCb" class="form-check-label">Checkbox Switch</label>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="form-check">
+          <input type="radio" name="switchRd" id="switchRd1" class="form-check-input">
+          <label for="switchRd1">Radio Switch 1</label>
+        </div>
+
+        <div class="form-check">
+          <input type="radio" name="switchRd" id="switchRd2" class="form-check-input">
+          <label for="switchRd2">Radio Switch 2</label>
+        </div>
+
+        <div class="form-check">
+          <input type="radio" name="switchRd" id="switchRd3" class="form-check-input">
+          <label for="switchRd3">Radio Switch 3</label>
+        </div>
+
+      </div>
+
+    </form>
+
+
+    <h2>5. Bootstrap-Klassen für Validierung</h2>
+    <p>Die Validierung wird grundsätzlich durch JavaScript vorgenommen</p>
+
+    <form action="" class="row mb-5">
+
+      <div class="col">
+        <label for="email">Mail-Adresse</label>
+        <!--* input:email.form-control -->
+        <input type="email" name="email" id="email" class="form-control">
+        <small class="form-text">Richtige Eingabe :-)</small>
+      </div>
+
+      <div class="col">
+        <label for="pw">Passwort</label>
+        <input type="password" name="pw" id="pw" class="form-control">
+        <small class="form-text">Falsche Eingabe :-(</small>
+      </div>
+
+    </form>
+
+  </div>
+
+<!-- Bootstrap JavaScript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
