@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nützliche Links zum Üben und Nachschlagen</title>
+  <link rel="stylesheet" href="css/solid.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/all-about.css">
+  <style>
+    .wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 564px) {
+      .wrapper {
+        width: 540px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .wrapper {
+        width: 720px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .wrapper {
+        width: 940px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .wrapper {
+        width: 1120px;
+      }
+    }
+
+    a[href^="https://"]::after {
+      display: inline-block;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      /* Set the font to Solid */
+      font: var(--fa-font-solid);
+      /* Set the Unicode value for the "fa-ghost" icon */
+      content: ' \f14d';
+    }
+  </style>
+  <script src="js/kurs-navigation.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <h1>Nützliche Links zum Üben und Nachschlagen</h1>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <ul>
+        <li><a href="https://wiki.selfhtml.org/wiki/SELFHTML" target="_blank">SelfHTML von SELFHTML e.V. </a></li>
+        <li><a href="https://developer.mozilla.org/de/docs/Web/CSS" target="_blank">CSS-Referenz von MDN </a></li>
+        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap 5.3
+            Dokumentation </a></li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
